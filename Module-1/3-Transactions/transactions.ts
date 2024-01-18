@@ -12,7 +12,7 @@ const senderKeypair = getKeypairFromEnvironment("KEY_PAIR");
 
 const transaction = new Transaction()
 
-const sender = new PublicKey("4dvZZmw5PhoQRSDz3KgzfZkioxa7PZjJuRvguwzSwxK7");
+//const sender = new PublicKey("4dvZZmw5PhoQRSDz3KgzfZkioxa7PZjJuRvguwzSwxK7");
 const receiver = new PublicKey("En5z1QWHbUtWdd54mdK1QVEBSpvDwejZDkroFAbccXbD");
 
 const amount = 1; // Amount of sol to send
