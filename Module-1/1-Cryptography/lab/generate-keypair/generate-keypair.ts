@@ -1,10 +1,12 @@
 import { Keypair } from "@solana/web3.js";
-require('dotenv').config();
+import { getKeypairFromEnvironment } from "@solana-developers/node-helpers";
 const bs58 = require('bs58');
 
-console.log(process.env.SECRET_KEY);
 
-import { getKeypairFromEnvironment } from "@solana-developers/node-helpers";
+require('dotenv').config();
+
+console.log(`Current working directory: ${process.cwd()}`);
+
 //const keypair = Keypair.generate();
 
 const keypair = getKeypairFromEnvironment("SECRET_KEY");
